@@ -1,0 +1,76 @@
+Báo cáo phân tích (I/O)
+Input (Văn bản thô)
+Nội dung hướng dẫn cài đặt cảm biến độ ẩm cho trang trại Lan.
+Tên biến, câu lệnh ngắn cần được phân biệt với văn bản thường.
+Đoạn mã Python điều khiển máy bơm cần hiển thị có tô màu cú pháp.
+Dữ liệu so sánh giữa cảm biến cũ và cảm biến mới.
+Danh sách công việc kiểm tra thiết bị trước khi vận hành.
+Output (Giao diện Render Chuyên Nghiệp)
+Tiêu đề, nội dung trình bày rõ ràng.
+Các tên biến như humidity hoặc lệnh như python app.py được hiển thị dưới dạng Inline Code.
+Đoạn chương trình Python nằm trong Code Block có Syntax Highlighting.
+Thông tin so sánh được trình bày bằng Table.
+Các bước kiểm tra được hiển thị bằng Task List có ô checkbox.
+Ký tự đặc biệt như * hoặc # được hiển thị nguyên dạng bằng ký tự Escape \.
+
+Source Code (.md)
+Markdown
+# Hướng dẫn cài đặt cảm biến độ ẩm cho trang trại Lan
+ 
+## Giới thiệu
+ 
+Hệ thống sử dụng cảm biến để đo độ ẩm đất. Giá trị đo được lưu trong biến `humidity`.
+ 
+Để chạy chương trình, sử dụng lệnh:
+ 
+`python sensor_controller.py`
+ 
+Nếu muốn hiển thị ký tự đặc biệt mà không bị Markdown định dạng, dùng dấu Escape:
+ 
+\* Không in nghiêng
+ 
+\# Không phải Heading
+ 
+## Mã Python điều khiển máy bơm
+ 
+```python
+humidity = 35
+ 
+if humidity < 40:
+print("Bật máy bơm")
+else:
+print("Tắt máy bơm")
+```
+ 
+## Bảng so sánh cảm biến
+ 
+| Tiêu chí | Cảm biến cũ | Cảm biến mới |
+|----------|-------------|-------------|
+| Độ chính xác | ±5% | ±1% |
+| Tuổi thọ | 2 năm | 5 năm |
+| Chống nước | Thấp | Cao |
+| Giá thành | Rẻ | Trung bình |
+ 
+## Danh sách kiểm tra thiết bị
+ 
+- [x] Kết nối cảm biến độ ẩm
+- [x] Kiểm tra nguồn điện
+- [x] Cấu hình biến `humidity`
+- [ ] Chạy thử hệ thống
+- [ ] Ghi nhận kết quả đo
+ 
+## Ghi chú
+ 
+> Luôn kiểm tra cảm biến trước khi kích hoạt máy bơm để tránh tưới nước không cần thiết.
+```
+Các thành phần Markdown đã sử dụng
+Heading: #, ##
+Inline Code: `humidity`, `python sensor_controller.py`
+Code Block + Syntax Highlighting: ```python
+Table
+Task List
+Blockquote
+Escape Character: \*, \#
+
+
+
